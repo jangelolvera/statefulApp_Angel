@@ -6,5 +6,5 @@ Algunas maneras de persistir información son: bases de datos y localstorage.
 Para transformar cualquier tipo de valor en JS a strings, se utiliza JSON.stringify() y para regresar de string al tipo de valor original, se utiliza JSON.parse().
 
 ## Descripción
-Para este programa se hizo el componente Input en un archivo aparte "input.js", el cual tiene el input y el <p> que muestran ek nombre del usuario.
+Para este programa se hizo el componente Input en un archivo aparte "input.js", el cual tiene el input y el párrafo que muestran el nombre del usuario. Se agregó un archivo .gif como prueba de la app.
 
