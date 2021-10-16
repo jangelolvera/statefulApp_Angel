@@ -1,6 +1,5 @@
-import React, {useState, useRef, useEffect} from "react";
-import App from "./App";
-import { render } from '@testing-library/react';
+import React from "react";
+import './App.css'
 
 function Input(props){
 
@@ -10,14 +9,15 @@ function Input(props){
             ...props.nombre.name,
             [event.target.name] : event.target.value
         });
+        localStorage.setItem("name", JSON.stringify(props.nombre.name));
     }
-
+    const saved= localStorage.getItem("name");
 
     return(
 
-        <div>
-            <input id="elinput" placeholder="Ingresa tu nombre" onChange={handleChange} name="name"/>
-            <p>Hola {props.nombre.name}</p>
+        <div id="toaa">
+            <input id="elinput" placeholder="Your name" onChange={handleChange} name="name"/>
+            <p id="bottomtext">Hello {saved}!</p>
         </div>
         
     );
